@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     QObject *object = lst[0];
 
     qDebug() << "width: " << QQmlProperty::read(object, "width").toInt();
-    qDebug() << "width: " << QQmlProperty::read(object, "title").toString();
+    qDebug() << "title: " << QQmlProperty::read(object, "title").toString();
 
     QObject *mainForm = object->findChild<QObject*>("mainForm");
     if (mainForm) {
